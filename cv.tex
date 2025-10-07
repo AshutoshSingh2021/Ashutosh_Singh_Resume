@@ -79,7 +79,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{7pt}{7pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -96,32 +96,6 @@
 
 %debug page outer frames
 %\usepackage{showframe}
-
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -142,76 +116,94 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Ashutosh Singh} \\[4.0pt]
+\href{https://github.com/AshutoshSingh2021}{\raisebox{-0.05\height}\faGithub\ AshutoshSingh2021} \ $|$ \ 
+\href{https://www.linkedin.com/in/ashutosh-18-in/}{\raisebox{-0.05\height}\faLinkedin\ ashutosh-18-in} \ $|$ \ 
+\href{mailto:ashutoshsingh15102@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ ashulearner18@gmail.com} \ $|$ \ 
+\href{tel:+916387724476}{\raisebox{-0.05\height}\faMobile \ +91 6387724476} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Open-Source contributor, JWOC} & \hfill \textbf{Feb 2023 - March 2023} \\[2.00pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1.00pt]
+        \item[--]  Worked majorly on a \href{https://seamlessui.vercel.app/}{\underline{Tailwind CSS library}}, created different "tailwind components". I used "Git" and "GitHub" to collaborate and submit my work. I improved my work by seeking constant feedback from the maintainers, and 7 pull requests were merged.
+        \item[--] I worked on another repository \href{https://github.com/Srijita-Mandal/fix-your-nums}{\underline{fix-your-nums}} which is a calculator application. I have resolved a "front-end" bug that was causing the table to not render properly. I used "HTML", "CSS" and "JavaScript" to resolve this issue.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Medvisor} & \hfill \href{https://github.com/AshutoshSingh2021/medvisor}{Project Link} \\[2.00pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1.00pt]
+        \item[--] Medvisor is an AI fitness advisor. It can answer most of the queries about fitness and health.
+        \item[--] Worked mainly on the "backend" part. Utilised "Node.js" as a runtime environment, "Express.js" for creating the REST API and "MongoDB" as a NoSQL database.
+        \item[--] Harnessed the Gemini API with the "gemini-pro" model to handle user prompts. Apart from that, I also used "bcryptjs" for password encryption and the "jsonwebtoken" library for user authentication.
+        \item[--] Also connected the frontend with the backend and set up CORS to handle cross-origin requests. Implemented the functionality to render the raw AI responses in the formatted text on the front-end.
+        \item[--] \textbf{Tech used: }React, Node.js, Express.js, JavaScript, RestAPIs, 
+ , NoSQL, MERN stack, Postman
+    \end{itemize}
+    \end{minipage}}  \\
 \end{tabularx}
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Ticket Resolution App} & \hfill \href{https://github.com/AshutoshSingh2021/Ticket-resolution-app}{Project Link} \\[2.00pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1.00pt] 
+        \item[--] The Objective was to create a Ticket resolution application to resolve doubts and assign tickets to the moderators automatically using AI.
+        \item[--] Created a Backend using Node.js, and a basic frontend with React.js.
+        \item[--] Utilised Inngest framework to integrate AI for assignment of tickets to the moderators. Currently working to make it better.
+        \item[--] \textbf{Tech used: } Node.js, Express.js, React, MongoDB, Gemini, Inngest, Nodemailer, UI component library
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{TextUtils} & \hfill \href{https://github.com/AshutoshSingh2021/my-First-react-app}{Project Link} \\[2.00pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1.00pt] 
+        \item[--] TextUtils is a Text formatting tool that can transform huge text according to your needs.
+        \item[--] Utilised "React.js" and "Bootstrap" libraries to create TextUtils. It can convert the text in different cases, remove extra spaces, extract all the emails and more.
+        \item[--] \textbf{Tech used: } JavaScript, Bootstrap, React.js
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+20\textbf{20} - 20\textbf{24} & \textbf{B.Tech} (CSE) at \textbf{Dr. A. P. J. Abdul Kalam Technical University} \hfill \normalsize GPA: \textbf{7.4/10.0} \\
+20\textbf{18} - 20\textbf{19} & \textbf{Intermediate} (Science) \textbf{Saraswati Vidya Mandir} (CBSE) \hfill  \textbf{75\%} \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
-
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Technical Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{Languages: } &  \normalsize{JavaScript, C/C++}\\
+\textbf{Cloud/Database: }  &  \normalsize{MongoDB}\\
+\textbf{Developer Tools: }  &  \normalsize{VS Code, Git, GitHub, Postman}\\
+\textbf{Technology/Framework: }  &  \normalsize{React.js, Express.js, Node.js, HTML, CSS, Bootstrap, Tailwind, Vite}\\
+\textbf{Others: }  &  \normalsize{}\\
 \end{tabularx}
-
-\vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
